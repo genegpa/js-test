@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-to-grid</title>
+</head>
+
+<body>
+    <div class="layout">
+        <div class="box">box</div>
+        <div class="box">box</div>
+        <div class="box">box</div>
+        <div class="box">box</div>
+        <div class="box">box</div>
+        <div class="box">box</div>
+        <div class="box">box</div>
+        <div class="box">box</div>
+        <div class="box">box</div>
+        <div class="box">box</div>
+        <div class="box">box</div>
+    </div>
+    <script>
+    </script>
+    <style>
+        .layout {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            /* width: 1400px; */
+            min-height: 500px;
+            background-color: antiquewhite;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+            margin: 0 auto;
+            padding: 30px;
+            gap:30px;
+        }
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: aliceblue;
+            width: 300px;
+            height: 200px;
+            background-color: #d36d6d;
+            border-radius: 8px;
+            /* margin: 20px; */
+            /* margin-bottom: 40px; */
+        }
+        /* 不适用space-between，推荐用grid */
+        /* .layout::after {
+            content: "";
+            flex: 1;
+        } */
+    </style>
+</body>
+
+</html>

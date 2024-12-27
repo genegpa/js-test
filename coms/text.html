@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text</title>
+</head>
+
+<body>
+    <div class="container">
+        我是白日依山尽，黄河入海流。欲穷千里目，更上一层楼。白日依山尽，黄河入海流。欲穷千里目，更上一层楼。白日依山尽，黄河入海流。欲穷千里目，更上一层楼。白日依山尽，黄河入海流。欲穷千里目，更上一层楼。
+    </div>
+    <div>
+        <span>
+            span设置ellipsis无效，要在块级上设置
+            》》》》我是白日依山尽，黄河入海流。欲穷千里目，更上一层楼。白日依山尽，黄河入海流。欲穷千里目，更上一层楼。白日依山尽，黄河入海流。欲穷千里目，更上一层楼。白日依山尽，黄河入海流。欲穷千里目，更上一层楼。
+        </span>
+    </div>
+
+    <div class="multiline-ellipsis">
+        这里是一段很长的文本，需要显示为多行文本，并且在超出指定行数的时候显示为省略号。这样可以保持内容的整洁，同时用户可以知道还有更多的内容。
+    </div>
+    <script>
+
+    </script>
+    <style>
+        .container {
+            /* display: flex; 不支持 */
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            margin: 1rem;
+            background-color: #ccc;
+        }
+
+        span {
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            margin: 1rem;
+            background-color: #ccc;
+        }
+
+        .multiline-ellipsis {
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            /* 定义显示的行数 */
+            -webkit-box-orient: vertical;
+            text-overflow: ellipsis;
+            white-space: normal;
+            max-height: calc(3em * 1.4);
+            /* 行高和行数的1.4倍 */
+            width: 200px;
+        }
+    </style>
+</body>
+
+</html>

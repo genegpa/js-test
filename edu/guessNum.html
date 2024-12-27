@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Num</title>
+</head>
+<body>
+    <input type="number" id="number" placeholder="请输入1-100的数字" onkeyup="if(event.keyCode==13) guess();">
+    <button onclick="guess()">猜一次</button>
+    <div id="tips"></div>
+    <script>
+        var current = getRandom()
+        var count = 0
+
+        function getRandom() {
+            count = 0
+            var num = Math.floor(Math.random() * 100);
+            console.log('getRandom:',num)
+            return num
+        }
+
+        function guess() {
+            var input = document.getElementById('number').value
+            var tips = document.getElementById('tips')
+            ++count
+            var msg = count+': '
+            console.log('guess:',input)
+
+            if (input > current) {
+                msg += '偏大'
+            } else if(input < current) {
+                msg += '偏小'   
+            } else {
+                msg += '猜对了'
+                current = getRandom()
+            }
+            tips.innerText = msg
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid-auto-fill</title>
+</head>
+
+<body>
+    <div class="layout">
+        <div class="box">box</div>
+        <div class="box">box</div>
+        <div class="box">box</div>
+        <div class="box">box</div>
+        <div class="box">box5</div>
+        <div class="box">box</div>
+        <div class="box">box</div>
+        <div class="box">box</div>
+        <div class="box">box</div>
+        <div class="box">box10</div>
+        <div class="box">box</div>
+    </div>
+    <script>
+    </script>
+    <style>
+        .layout {
+            display: grid;
+            /* grid-template-columns: repeat(4,1fr);
+            width: 1400px; */
+            /* 响应式 */
+            grid-template-columns: repeat(auto-fill,minmax(10rem,1fr));
+            width: 80%;
+            min-height: 500px;
+            background-color: antiquewhite;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+            margin: 0 auto;
+            padding: 30px;
+            gap:30px;
+        }
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: aliceblue;
+            height: 200px;
+            background-color: #d36d6d;
+            border-radius: 8px;
+        }
+    </style>
+</body>
+
+</html>
