@@ -4,7 +4,7 @@
 ### web配置
 #### 运行的基础路径
 github: /js-test/rfkj/m/
-cloudflare: /cf/rfkj/m/
+cloudflare: /cf1/rfkj/m/
 
 ### hosts
 www.ipaddress.com  查询 github.com
