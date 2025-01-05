@@ -4,30 +4,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>index-1</title>
+    <title>index-3</title>
 </head>
 
 <body>
-    <div class="container">
-        我是<span class="item">行内元素</span>白日依山尽，黄河入海流。欲穷千里目，更上一层楼。白日依山尽，黄河入海流。欲穷千里目，更上一层楼。白日依山尽，黄河入海流。欲穷千里目，更上一层楼。白日依山尽，黄河入海流。欲穷千里目，更上一层楼。
+    <div class="layout">
+        <div class="box">box</div>
+        <div class="box">box</div>
+        <div class="box">box</div>
+        <div class="box">box</div>
+        <div class="box">box5</div>
+        <div class="box">box</div>
+        <div class="box">box</div>
+        <div class="box">box</div>
+        <div class="box">box</div>
+        <div class="box">box10</div>
+        <div class="box">box</div>
     </div>
-    <div class="layout"></div>
     <script>
-
     </script>
     <style>
-        .container {
-            margin: 3rem;
-            background-color: #ccc;
-            height: 10rem;
+        .layout {
+            display: grid;
+            /* grid-template-columns: repeat(4,1fr);
+            width: 1400px; */
+            /* 响应式 */
+            grid-template-columns: repeat(auto-fill,minmax(10rem,1fr));
+            width: 80%;
+            min-height: 500px;
+            background-color: antiquewhite;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+            margin: 0 auto;
+            padding: 30px;
+            gap:30px;
         }
-        .item {
-            /* margin/padding:左右有效，上下失效 */
-            padding: 1rem;
-            border: 1px solid red;
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: aliceblue;
+            height: 200px;
+            background-color: #d36d6d;
+            border-radius: 8px;
         }
-
-        
     </style>
 </body>
 
