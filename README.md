@@ -6,6 +6,7 @@
 github: /js-test/rfkj/m/
 cloudflare: /cf1/rfkj/m/
 https://js-test-ann.pages.dev/cf1/rfkj/m/
+cf: del 20250105 08:36
 
 ### hosts
 www.ipaddress.com  查询 github.com  // 不一定有用
