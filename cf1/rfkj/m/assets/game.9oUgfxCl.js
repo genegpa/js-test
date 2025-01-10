@@ -1,0 +1,1 @@
+import{B as a,C as e}from"./index-go2EMFu_.js";const s=()=>a({method:"POST",url:e+"/game/list"}),t=()=>a({method:"POST",url:e+"/area/list"}),r=()=>a({method:"POST",url:e+"/server/list"}),m=(s=1)=>a({method:"POST",url:e+"/game/itemlist",data:{key:s}});export{t as a,r as b,m as c,s as r};
