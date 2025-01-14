@@ -1,5 +1,10 @@
 # js-test
 
+## public
+* 清除缓存：cookie; test: 我的收藏
+
+## http-server
+http://127.0.0.1:8080/cf1/rfkj/m/#/
 
 ### web配置
 #### 运行的基础路径
