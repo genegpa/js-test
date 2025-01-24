@@ -4,6 +4,8 @@
 * 清除缓存：cookie; test: 我的收藏
 
 ## http-server
+http://127.0.0.1:8080/cf1/rfkj/o/
+http://127.0.0.1:8080/cf1/rfkj/p/
 http://127.0.0.1:8080/cf1/rfkj/m/#/
 
 ### web配置
