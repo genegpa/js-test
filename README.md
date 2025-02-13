@@ -7,6 +7,9 @@
 http://127.0.0.1:8080/cf1/rfkj/o/
 http://127.0.0.1:8080/cf1/rfkj/p/
 http://127.0.0.1:8080/cf1/rfkj/m/#/
+http://127.0.0.1:8080/cf1/rfkj/m-coin/
+http://127.0.0.1:8080/cf1/rfkj/p/   --main
+http://127.0.0.1:8080/cf1/rfkj/o/	--官网
 
 ### web配置
 #### 运行的基础路径
