@@ -1,1 +1,0 @@
-import{b as r,c as s,i as a}from"./index-B55G5URM.js";import{_ as e}from"./_plugin-vue_export-helper.BCo6x5W8.js";const o=e({},[["render",function(e,o){const t=a;return r(),s(t,{class:"tabbar"})}],["__scopeId","data-v-f32978db"]]);export{o as _};
