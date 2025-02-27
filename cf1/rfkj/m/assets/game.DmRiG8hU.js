@@ -1,0 +1,1 @@
+import{h as t}from"./http.Dv2IDCE6.js";import{x as s}from"./index-BiBaZczZ.js";const a=()=>t({method:"POST",url:s+"/game/list"}),e=()=>t({method:"POST",url:s+"/area/list"}),r=()=>t({method:"POST",url:s+"/server/list"}),m=(a=1)=>t({method:"POST",url:s+"/game/itemlist",data:{key:a}});export{e as a,r as b,m as c,a as r};
