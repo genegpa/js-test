@@ -1,6 +1,8 @@
 # js-test
 
 ## public
+* 提交后，等待3m；
+* 图片修改：assets，static
 * 清除缓存：cookie; test: 我的收藏
 
 ## http-server
